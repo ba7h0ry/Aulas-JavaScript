@@ -1,0 +1,8 @@
+body{
+    background-color: rgb(132, 132, 216);
+    color: white;
+    font: normal 20pt Arial; /*colo e font estão alterando as cores das letras e o bakcground segue uma unica regra*/
+}
+header h1{
+    color: rgb(201, 184, 91);
+}
