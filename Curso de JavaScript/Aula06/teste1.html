@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de alguns comandos JS</title>
+</head>
+<body>
+    <script>
+        var salario = Number.parseFloat(window.prompt('Digite seu salário: '));
+        document.write(`O seu salário formatado em reais é: ${salario.toLocaleString('pt-BR',{style: 'currency', currency:'BRL'})} .`);
+
+    </script>
+</body>
+</html>

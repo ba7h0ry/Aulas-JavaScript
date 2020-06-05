@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!---Assim a largura do site vai ser a largura do display do client-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Author" content="Airk"> 
+    <meta name="Description" content="Primeiros JavaScripts">
+    <link rel="stylesheet" href="style.css">
+        <title>Aula JS</title>
+        <style>
+            body{
+                background-color: rgb(105, 105, 173);
+                color: white;
+                font: normal 20pt Arial;
+            }
+            h1{
+                color: goldenrod;
+            }
+        </style>
+</head>
+<body>
+   
+    <h1>Olá, mundo!</h1>
+
+    <p>Já me livrei da maldição(?)</p>
+     
+    <script>
+        var n1 = Number.parseFloat(window.prompt("Digite um número:" ));
+        var n2 =  Number.parseFloat(window.prompt("Digite outro número" )); 
+        //ou var n1 = Number(window.prompt("Digite um número: "));
+        //assim o JS converte o valor de forma automática.
+        var soma = n1 + n2;
+        alert(` A soma dos valores ${n1} e ${n2} é:  ${soma}.`); // Atente e acostume a essa forma de construir strings com variaveis
+        /*
+        A essa forma chamamos de template string. E '${}' chama-se PLACE HOLDER. 
+        */
+   </script>
+    <!--Scripts é melhor em documento a parte-->
+</body> 
+</html>
