@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+    font: normal arial;
+    color: darkgoldenrod;
+}
+body{
+    
+    text-align: center;
+    color:cornsilk;
+    font: normal 20pt arial;
+    background: blue;
+}
+
+article h2{
+  
+    border-top: 12px;
+    text-align: center;
+    font: normal arial;
+    color: darkgoldenrod; 
+}
+
+#menu ul{
+   
+    padding: 0px;
+    margin: 0px;
+    background-color: #EDEDED;
+    list-style: none;
+    
+}
+#menu ul li{
+    color: black;
+    display: inline;
+}
