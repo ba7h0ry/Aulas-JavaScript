@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM JS</title>
+    <style>
+
+        body{
+            background-color: black;
+            color: blanchedalmond;
+            font: normal 16pt arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando com o DOM</h1>
+    <p>Segue o resultado: </p>
+    <p>Frase aleatória para usar o <strong>Negrito</strong> </p>
+    <div id="msg">Clique aqui!</div>
+
+    <script>
+        var p1 = document.getElementsByTagName('p')[0]; // pegando o elemento pelo nome e especificando com [0]
+        window.document.write('Olá, mundo!!!<br>');
+        p1.style.color = 'green';        
+      
+        //d.innerText = 'Estou aguardando...'; uma forma de exibir no body
+        //window.document.getElementById('msg'). innerText = 'olar!';
+        //uma forma mais longa mas sem usar da variavel d.
+        //forma mais recomendada:
+        var d = window.document.querySelector('div#msg');
+        d.style.background ="blue";
+        //mais recomendado e usando a sintaxe do css. div#nomedadiv
+    </script>
+
+</body>
+</html>
