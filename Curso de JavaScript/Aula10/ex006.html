@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            font: normal 15pt Arial;
+            background-color:goldenrod;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+             
+        }
+    </style>
+</head>
+<body>
+    <h1>O William está emocionado!</h1>
+    <div id="area"> Interaja... </div>
+
+     
+
+<!--Funções acontecem apartir de gatilhos, como o apertar de 
+uma tecla
+ou mesmo a ação de um mouse. 
+A estes é dado o nome de evento (DOM)-->
+
+
+    <footer>
+        <em>Nenhum direito reservado</em>
+    </footer>
+
+    <script> 
+     var a = window.document.querySelector('div#area');
+     a.addEventListener('click',clicar)
+     a.addEventListener('mouseenter',entrar)
+     a.addEventListener('mouseout', sair)
+     
+        function clicar() {
+           
+            a.innerHTML = '<em>Clicou!</em>';
+            a.style.background = 'red';
+
+        }
+        function entrar(){
+           
+            a.innerHTML = '<em>Mouse dentro</em>'
+            a.style.background = 'blue';
+            
+        }
+        function sair(){
+            
+            a.style.background ='goldenrod';
+            a.innerHTML = '<em>Mouse fora</em>'
+        }
+
+    </script>
+
+</body>
+</html>
+<!--Made by Airk-->
