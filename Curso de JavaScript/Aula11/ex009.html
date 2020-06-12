@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocidade</title>
+</head>
+<body>
+    <h1>Medindo sua velocidade</h1>
+    <p>Velocidade do veículo: <input type="number" id='txtvel'> km/h
+    <input type='button' value="verificar" id='check' onclick="teste()">
+    <p> <div id='resposta'> Sua velocidade é:  </div></p>
+    <div id='aviso'>Atenção</div>
+    <script>
+        function teste(){
+        var txtv = document.querySelector('input#txtvel');
+        var vel = Number(txtv.value);
+        var resposta = document.querySelector('div#resposta');
+        resposta.innerHTML = `Sua velocidade é: ${vel} km/h`;
+        if (vel > 60){
+            aviso = document.querySelector('div#aviso');
+            aviso.innerHTML = `Acima do limite de velocidade. MULTADO`;
+        }else{
+            aviso.innerHTML = `Não ultrapasse o limite de velocidade`;
+        }
+
+    }
+    
+   
+    </script>
+    
+</body>
+</html>
