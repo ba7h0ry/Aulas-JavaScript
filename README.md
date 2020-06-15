@@ -1,2 +1,2 @@
-# Aulas-JavaScript
-repositorio de testes com as aulas de javascript
+# Exercicios de aulas de JavaScript
+Repositório de testes com as aulas de javascript.
