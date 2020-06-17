@@ -7,26 +7,39 @@
     <style>
         h1{
             text-align: center;
+            background: white; /* pinta de uma determinada cor o fundo o elemento*/
+        border-radius: 15px; /*Arredonda a borda do elemento*/
+        padding: 25px; /*Aumenta o recuo do texto dentro do elemento*/
+        width: 600px; /* define a largura do elemento*/
+        margin: auto;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39); /*Aqui se estiliza  sombra de determinado elemento.*/
+
         }
         body{
-            background-color: black;
+            background-color: rgba(69, 69, 177, 0.705);
             font: normal 20pt Arial;
             color: chartreuse;
+            text-align: center;
         }
         div#res{
             margin-top: 20px;
         }
         nav{
-           text-align: center;
+        background: white; /* pinta de uma determinada cor o fundo o elemento*/
+        border-radius: 15px; /*Arredonda a borda do elemento*/
+        padding: 25px; /*Aumenta o recuo do texto dentro do elemento*/
+        width: 600; /* define a largura do elemento*/
+        margin: auto;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39); /*Aqui se estiliza  sombra de determinado elemento.*/
 
         }
     </style>
 </head>
 <body>
     <h1>Operações basicas!</h1>
-    <hr>
+   
     <p>Digite dois números e escolha uma operação.</p>
-    <hr>
+    
     <nav>
         <input type='number' id='texto1'> 
         <input type='number' id='texto2'>
@@ -37,7 +50,7 @@
     </nav>
     <div id='res'>O resultado é: </div>
     <div id='divisor'></div>
-    <hr>
+    
     <script>
         function soma(){
             var caixa1 = document.querySelector('input#texto1');
