@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(1, 6, 56);
+    font: normal 15pt Arial;
+}
+
+header{
+     color: white;
+     text-align: center;
+}
+
+section{
+    background: white; /* pinta de uma determinada cor o fundo o elemento*/
+    border-radius: 15px; /*Arredonda a borda do elemento*/
+    padding: 20px; /*Aumenta o recuo do texto dentro do elemento*/
+    width: 500px; /* define a largura do elemento*/
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39); /*Aqui se estiliza  sombra de determinado elemento.*/
+
+}
+
+footer{
+    color: white;
+    text-align: center;
+}
+img {
+    margin-top: 18px;
+    margin-left: auto;
+    width: 250px;
+}
+div#res{
+    text-align: center;
+}
